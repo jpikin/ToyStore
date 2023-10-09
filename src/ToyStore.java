@@ -1,5 +1,11 @@
-import java.util.List;
+import java.util.LinkedList;
+import java.util.PriorityQueue;
+
 
 public class ToyStore {
-    private List<Visitors> queque;
+    private PriorityQueue<Visitors> queque = new PriorityQueue<>();
+
+    public PriorityQueue getQueque(){
+        return queque;
+    }
 }
