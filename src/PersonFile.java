@@ -1,20 +1,21 @@
-import java.io.File;
+import java.io.BufferedWriter;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 
 
 public class PersonFile {
     public static void addToFile(String str)  {
-        try(FileOutputStream fos=new FileOutputStream("file.txt"))
-        {
-            byte[] buffer = str.getBytes();
 
-            fos.write(buffer, 0, buffer.length);
-            System.out.println("The file has been written");
+        try {
+            FileWriter writer = new FileWriter("c:\\temporary\\file.txt", true);
+            BufferedWriter bufferWriter = new BufferedWriter(writer);
+            bufferWriter.write(str+"\n");
+            bufferWriter.close();
         }
-        catch(IOException ex){
+        catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
 
-            System.out.println(ex.getMessage());
-        }
     }
 }
