@@ -14,11 +14,14 @@ public class WorkData {
     }
 
     private static String getFrequency(Toys[] arr){
-        for (Toys t: arr) {
-
-        }
-        return "1";
+        int r =  (int) (Math.random() * 10);
+        if(r<3){
+            return arr[0].getName();
+        } else if(r<5){
+            return arr[1].getName();
+        } else return arr[2].getName();
     }
+
 }
 
 

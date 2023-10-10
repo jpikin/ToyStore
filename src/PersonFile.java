@@ -7,7 +7,7 @@ public class PersonFile {
     public static void addToFile(String str)  {
 
         try {
-            FileWriter writer = new FileWriter("c:\\temporary\\file.txt", true);
+            FileWriter writer = new FileWriter("file.txt", true);
             BufferedWriter bufferWriter = new BufferedWriter(writer);
             bufferWriter.write(str+"\n");
             bufferWriter.close();
