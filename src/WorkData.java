@@ -1,6 +1,4 @@
-import java.io.IOException;
-import java.util.LinkedList;
-import java.util.Objects;
+
 import java.util.PriorityQueue;
 
 public class WorkData {
@@ -9,7 +7,7 @@ public class WorkData {
         return arr;
 
     }
-    public static void get(PriorityQueue queue, Toys[] arr) throws IOException {
+    public static void get(PriorityQueue queue, Toys[] arr) {
 
         String str = "Покупатель "+(String) queue.remove()+" получает " + getFrequency(arr) + "\n";
         PersonFile.addToFile(str);
