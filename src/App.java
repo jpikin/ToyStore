@@ -35,7 +35,15 @@ public class App {
         Visitors v10 = new Visitors("Roman");
         toyStore.getQueque().add(v10.getName());
 
-        PersonFile.createFile();
+        WorkData.get(toyStore.getQueque(),toysList);
+        WorkData.get(toyStore.getQueque(),toysList);
+        WorkData.get(toyStore.getQueque(),toysList);
+        WorkData.get(toyStore.getQueque(),toysList);
+        WorkData.get(toyStore.getQueque(),toysList);
+        WorkData.get(toyStore.getQueque(),toysList);
+        WorkData.get(toyStore.getQueque(),toysList);
+        WorkData.get(toyStore.getQueque(),toysList);
+        WorkData.get(toyStore.getQueque(),toysList);
         WorkData.get(toyStore.getQueque(),toysList);
 
 
